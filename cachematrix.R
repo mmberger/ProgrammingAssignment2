@@ -19,11 +19,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-## cacheSolve: creates the invers of a square inversable matrix
+## cacheSolve: creates the inverse of a square inversable matrix
 ##   with cached elements
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Return a matrix that is the inverse of 'x'
   m <- x$getsolve()
   if(!is.null(m)) {
     message("getting cached data")
